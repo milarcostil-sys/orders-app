@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>מערכת ניהול הזמנות</title>
 
-  <!-- PWA -->
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#007bff">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="icon-512.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
   <style>
     html, body {
@@ -55,7 +61,6 @@
       transform: scale(0.95);
     }
 
-    /* Loader Dots מתחת לכפתור */
     .dots {
       margin-top: 1.5em;
       display: flex;
@@ -80,7 +85,6 @@
   </style>
 </head>
 <body>
-  <!-- שימוש ב-img במקום background -->
   <img id="logo" src="footerLogo_millennium.png" alt="לוגו המערכת">
   <div id="appName">מערכת ניהול איסוף הזמנות</div>
   <button class="btn-open" id="openApp">פתח את המערכת</button>
