@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מערכת ניהול הזמנות</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007bff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon-512.png">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f7fa;
+    }
+
+    .btn-open {
+      padding: 1em 2em;
+      font-size: 1.2em;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.1s;
+    }
+
+    .btn-open:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-open" id="openApp">פתח את המערכת</button>
+
+  <script>
+    const btn = document.getElementById('openApp');
+    btn.addEventListener('click', () => {
+      // פותח את הדף של Apps Script במסך מלא
+      window.location.href = "https://script.google.com/macros/s/AKfycbx7mHxU7nWtK_UnQ9MaJH5tmPRqa4Wfpsboh5p_ikUjv9-ssWZ3ko-Y-liaqlD7ZGh67A/exec";
+    });
+  </script>
+</body>
+</html>
